@@ -18,8 +18,9 @@ const contact = () => {
   return (
     <div
       name="contact"
-      className="w-full h-96 bg-green-700 p-5 flex flex-col items-center"
+      className="w-full h-96 p-5 flex flex-col items-center"
     >
+   
       <div className="flex justify-between w-1/2 gap-2 mb-[-20px] z-10">
         <div className="flex flex-col bg-red-200 items-center rounded-md p-4 w-48">
           <GoLocation />

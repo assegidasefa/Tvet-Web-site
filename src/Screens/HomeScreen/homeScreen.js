@@ -7,7 +7,7 @@ import Home from '../../Components/Home/home'
 
 const homeScreen = () => {
   return (
-    <div>
+    <div className='bg-[#0a192f]'>
 
     <Navbar/>
     <Home/>

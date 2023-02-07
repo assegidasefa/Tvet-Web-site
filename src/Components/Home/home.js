@@ -16,10 +16,10 @@ const Home = () => {
     return () => Lottie.destroy();
   }, []);
   return (
-    <div name="home" className="bg-blue-500 h-96 w-full flex">
-      <div className="bg-red-500 w-1/2 p-4">
-        <h1 className="text-2xl">Hula Construction And Industrial College </h1>
-        <h1>
+    <div name="home" className=" h-96 w-full flex">
+      <div className=" w-1/2 p-4">
+        <h1 className="text-2xl text-white uppercase font-mono font-bold pt-10">Hula Construction And Industrial College </h1>
+        <h1 className="text-white font-mono text-sm pt-10 text-left">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
@@ -30,7 +30,7 @@ const Home = () => {
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum.
         </h1>
-        <Button type="primary">Get Started</Button>
+        <Button className="w-32 mt-5" ghost>Get Started</Button>
       </div>
       <div className="w-1/2 h-96" ref={container}></div>
     </div>
