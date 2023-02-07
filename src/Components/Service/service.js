@@ -34,10 +34,14 @@ const Service = () => {
   }, []);
   return (
 
-
-    <div name="service" className="w-full h-80 flex justify-around mb-5">
+     <div className="flex flex-col">
+<div >
+     <h1 className="text-white pb-10 uppercase text-3xl">Our Service</h1>
+</div>
+     
+    <div name="service" className="w-full h-100vh flex justify-around mb-5">
     
-      <div className="w-56  flex flex-col items-center bg-gray-500 rounded-xl">
+      <div className="w-64 p-2  flex flex-col items-center bg-gray-500 rounded-xl">
         <h1 className="text-2xl text-white pt-3">Theory</h1>
         <div
           className="w-32 flex justify-center items-center"
@@ -50,7 +54,7 @@ const Service = () => {
         </h1>
       </div>
 
-      <div className="w-56 bg-green-200 flex flex-col items-center bg-gray-500 rounded-xl">
+      <div className="w-64 p-2 flex flex-col items-center bg-gray-500 rounded-xl">
         <h1 className="text-2xl text-white pt-3">Practice</h1>
         <div
           className="w-32 flex justify-center items-center py-5"
@@ -63,7 +67,7 @@ const Service = () => {
         </h1>
       </div>
 
-      <div className="w-56 bg-green-200 flex flex-col items-center bg-gray-500 rounded-xl">
+      <div className="w-64 p-2  flex flex-col items-center bg-gray-500 rounded-xl">
         <h1 className="text-2xl text-white pt-3">Life Skill</h1>
         <div
           className="w-32 flex justify-center items-center py-5"
@@ -75,6 +79,7 @@ const Service = () => {
           since the 1500s,
         </h1>
       </div>
+    </div>
     </div>
   );
 };

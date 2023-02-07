@@ -19,7 +19,7 @@ const Home = () => {
     <div name="home" className=" h-96 w-full flex">
       <div className=" w-1/2 p-4">
         <h1 className="text-2xl text-white uppercase font-mono font-bold pt-10">Hula Construction And Industrial College </h1>
-        <h1 className="text-white font-mono text-sm pt-10 text-left">
+        <h1 className="text-gray-300 font-mono text-sm pt-10 text-left">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
