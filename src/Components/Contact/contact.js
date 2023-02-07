@@ -18,7 +18,7 @@ const contact = () => {
   return (
     <div
       name="contact"
-      className="w-full h-96 p-5 flex flex-col items-center"
+      className="w-full h-100vh p-5 flex flex-col items-center"
     >
    
       <div className="flex justify-between w-1/2 gap-2 mb-[-20px] z-10">
@@ -46,7 +46,7 @@ const contact = () => {
           <h1 className="text-gray-500 text-sm">xyz@gmial.com</h1>
         </div>
       </div>
-      <div className="bg-yellow-300 w-1/3 pr-16 pt-10 flex justify-start items-start">
+      <div className="bg-gray-200 w-1/3 pr-16 pt-10 flex justify-start items-start rounded-xl">
         <Form
           className="w-full"
           name="basic"
@@ -66,7 +66,7 @@ const contact = () => {
           onFinishFailed={onFinishFailed}
           autoComplete="off"
         >
-          <Title>Contact Us</Title>
+          <Title className="font-mono">Contact Us</Title>
           <Form.Item
             label="Name"
             name="Name"
