@@ -16,7 +16,7 @@ const Home = () => {
     return () => Lottie.destroy();
   }, []);
   return (
-    <div name="home" className=" h-96 w-full flex">
+    <div name="home" className=" h-100vh w-full flex">
       <div className=" w-1/2 p-4">
         <h1 className="text-2xl text-white uppercase font-mono font-bold pt-10">Hula Construction And Industrial College </h1>
         <h1 className="text-gray-300 font-mono text-sm pt-10 text-left">
