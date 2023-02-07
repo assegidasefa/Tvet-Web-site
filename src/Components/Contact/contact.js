@@ -20,28 +20,27 @@ const contact = () => {
       name="contact"
       className="w-full h-100vh p-5 flex flex-col items-center"
     >
-   
       <div className="flex justify-between w-1/2 gap-2 mb-[-20px] z-10">
         <div className="flex flex-col bg-white items-center rounded-md p-4 w-48 gap-2">
-          <GoLocation size={28} className="text-blue-400"/>
+          <GoLocation size={28} className="text-blue-400" />
           <h1 className="font-bold text-md font-mono">Location</h1>
           <h1 className="text-gray-500 text-sm">southern part of ethiopia</h1>
         </div>
 
         <div className="flex flex-col bg-white items-center rounded-md p-4 w-48 gap-2">
-          <BsFillTelephoneFill size={28} className="text-blue-400"/>
+          <BsFillTelephoneFill size={28} className="text-blue-400" />
           <h1 className="font-bold text-md font-mono">Phone Number</h1>
           <h1 className="text-gray-500 text-sm">+125 9......</h1>
         </div>
 
         <div className="flex flex-col bg-white items-center rounded-md p-4 w-48 gap-2">
-          <FaFax size={28} className="text-blue-400"/>
+          <FaFax size={28} className="text-blue-400" />
           <h1 className="font-bold text-md font-mono">Fax</h1>
           <h1 className="text-gray-500 text-sm">1-23-4323 50</h1>
         </div>
 
         <div className="flex flex-col bg-white items-center rounded-md p-4 w-48 gap-2">
-          <MdEmail size={28} className="text-blue-400"/>
+          <MdEmail size={28} className="text-blue-400" />
           <h1 className="font-bold text-md font-mono">Email</h1>
           <h1 className="text-gray-500 text-sm">xyz@gmial.com</h1>
         </div>
@@ -102,7 +101,11 @@ const contact = () => {
               span: 16,
             }}
           >
-            <Button type="primary" htmlType="submit">
+            <Button
+              type="primary"
+              htmlType="submit"
+              className="bg-[#0a192f] text-white"
+            >
               Submit
             </Button>
           </Form.Item>
