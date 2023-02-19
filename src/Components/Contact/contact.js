@@ -18,34 +18,34 @@ const contact = () => {
   return (
     <div
       name="contact"
-      className="w-full h-100vh p-5 flex flex-col items-center"
+      className="w-full  overflow-x-hidden  h-100vh p-5 flex flex-col justify-center items-center "
     >
-      <div className="flex md:flex-row md:justify-between flex-col items-center w-full md:w-1/2 gap-2 mb-5 md:mb-[-20px] z-10">
-        <div className="flex flex-col bg-white items-center rounded-md p-4 w-48 gap-2">
+      <div className="flex md:flex-row md:justify-between flex-col items-center w-full md:w-[550px] gap-2 mb-5 md:mb-[-20px] z-10">
+        <div className="flex flex-col bg-white items-center rounded-md py-4 h-32 w-48 gap-2">
           <GoLocation size={28} className="text-blue-400" />
           <h1 className="font-bold text-md font-mono">Location</h1>
           <h1 className="text-gray-500 text-sm">southern part of ethiopia</h1>
         </div>
 
-        <div className="flex flex-col bg-white items-center rounded-md p-4 w-48 gap-2">
+        <div className="flex flex-col bg-white items-center rounded-md py-4 w-48 h-32 gap-2">
           <BsFillTelephoneFill size={28} className="text-blue-400" />
           <h1 className="font-bold text-md font-mono">Phone Number</h1>
-          <h1 className="text-gray-500 text-sm">+125 9......</h1>
+          <h1 className="text-gray-500 text-xs">+125 931401760</h1>
         </div>
 
-        <div className="flex flex-col bg-white items-center rounded-md p-4 w-48 gap-2">
+        <div className="flex flex-col bg-white items-center rounded-md py-4 h-32 w-48 gap-2">
           <FaFax size={28} className="text-blue-400" />
           <h1 className="font-bold text-md font-mono">Fax</h1>
           <h1 className="text-gray-500 text-sm">1-23-4323 50</h1>
         </div>
 
-        <div className="flex flex-col bg-white items-center rounded-md p-4 w-48 gap-2">
+        <div className="flex flex-col bg-white items-center rounded-md py-4 w-48 h-32 gap-2">
           <MdEmail size={28} className="text-blue-400" />
           <h1 className="font-bold text-md font-mono">Email</h1>
-          <h1 className="text-gray-500 text-sm">xyz@gmial.com</h1>
+          <h1 className="text-gray-500 text-sm">nigusedubale@gmail.com</h1>
         </div>
       </div>
-      <div className="bg-gray-200 w-full md:w-1/3  md:pr-16 px-4 md:pt-10 flex flex-col md:flex-row md:justify-start md:items-start rounded-xl">
+      <div className="bg-gray-200 w-full md:w-[400px]  md:pr-16 px-4 md:pt-10 flex flex-col md:flex-row md:justify-start md:items-start rounded-xl">
         <Form
           className="w-full"
           name="basic"

@@ -4,8 +4,8 @@ import Logo from "../../assets/logo.png";
 
 const navbar = () => {
   return (
-    <div className="w-full   h-full flex justify-between py-3">
-      <div className=" w-1/5 pl-5">
+    <div className="w-full   h-full flex justify-between py-3 overflow-x-clip">
+      <div className=" w-1/6 md:1/5 pl-5 mt-[-10px]">
         <img
           className="rounded-full h-12 "
           src={Logo}
@@ -14,7 +14,7 @@ const navbar = () => {
         ></img>
       </div>
 
-      <ul className=" w-4/5 text-sm bg-yellow-300 sm:w-1/2 md:text-md lg:text-lg sm:bg-red-500 flex justify-around ">
+      <ul className=" w-3/5  text-sm sm:w-1/2 md:text-md lg:text-lg  flex justify-around ">
         <li>
           <Link
             className="text-white font-mono hover:text-green-300 hover:cursor-pointer"

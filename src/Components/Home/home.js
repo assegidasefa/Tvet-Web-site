@@ -62,7 +62,7 @@ const Home = () => {
           x: 0,
         }}
         transition={{ delay: 1, duration: 2 }}
-        className=" h-96 w-[100%] bg-green-300 md:bg-red-400 md:w-1/2 "
+        className=" h-96 w-[100%]  md:w-1/2 "
         ref={container}
       ></motion.div>
     </div>

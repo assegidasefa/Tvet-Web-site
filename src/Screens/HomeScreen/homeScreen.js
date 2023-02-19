@@ -9,11 +9,11 @@ const homeScreen = () => {
   return (
     <div className="bg-[#0a192f] w-screen">
       <h1>hey</h1>
-      {/* <Navbar /> */}
-      {/* <Home/> */}
-      {/* <About/> */}
+      <Navbar />
+      <Home />
+      <About />
       <Service />
-      {/* <Contact /> */}
+      <Contact />
     </div>
   );
 };

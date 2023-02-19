@@ -32,22 +32,21 @@ const about = () => {
         whileInView={{ opacity: 1 }}
         transition={{ delay: 1, duration: 2 }}
       >
-        <h1 className="text-white pb-10 uppercase text-3xl">About</h1>
+        <h1 className="text-green-300 pb-10 uppercase text-3xl ">About</h1>
       </motion.div>
       <div
         name="about"
-        className=" h-screen md:h-96 flex justify-between p-2 w-full flex-col md:flex-row overscroll-x-auto overflow-x-auto no-scrollbar"
+        className=" h-full md:h-96 flex justify-between p-2 w-full flex-col md:flex-row overscroll-x-auto overflow-x-auto no-scrollbar"
       >
         <motion.div
-          initial={{ opacity: 0, x: "-400px" }}
+          initial={{ opacity: 0 }}
           whileInView={{
             opacity: 1,
-            x: 0,
           }}
           transition={{ delay: 1, duration: 2 }}
           className="flex w-full md:w-1/2 flex-col"
         >
-          <h1 className="text-4xl pb-3 font-bold text-white">Mission</h1>
+          <h1 className="text-4xl md:pb-3 font-bold text-white">Mission</h1>
           <h1 className="p-10 font-mono text-sm text-center text-gray-300">
             <span className="text-green-300">hula tvet college</span> are it's
             mission and purpose that needs to link organization to the society
@@ -55,15 +54,14 @@ const about = () => {
           </h1>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, x: "400px" }}
+          initial={{ opacity: 0 }}
           whileInView={{
             opacity: 1,
-            x: 0,
           }}
           transition={{ delay: 1, duration: 2 }}
           className="flex w-full md:w-1/2 flex-col"
         >
-          <h1 className="text-4xl font-bold text-white">
+          <h1 className="text-4xl font-bold text-white md:mb-6">
             Courses Under Hula tvet college
           </h1>
           <ul className="w-full skills-list flex flex-wrap gap-x-4 lg:gap-x-10  pl-10 text-sm tracking-wide leading-5">

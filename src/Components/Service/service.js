@@ -45,7 +45,7 @@ const Service = () => {
   return (
     <div className="flex flex-col items-center">
       <div>
-        <h1 className="text-white pb-10 uppercase text-3xl">Our Service</h1>
+        <h1 className="text-green-300 pb-10 uppercase text-3xl">Our Service</h1>
       </div>
 
       <div
@@ -53,7 +53,7 @@ const Service = () => {
         className="w-[70%] h-100vh flex flex-col gap-2 md:flex-row justify-around mb-5"
       >
         <motion.div
-          initial={{ opacity: 0, x: -100 }}
+          initial={{ opacity: 0 }}
           whileInView={{
             opacity: 1,
             x: 0,
@@ -105,7 +105,7 @@ const Service = () => {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, x: 100 }}
+          initial={{ opacity: 0 }}
           whileInView={{
             opacity: 1,
             x: 0,
