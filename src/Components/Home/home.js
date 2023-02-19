@@ -3,6 +3,18 @@ import React, { useEffect, useRef } from "react";
 import Lottie from "lottie-web";
 import { motion } from "framer-motion";
 
+const buttonVariants = {
+  hover: {
+    scale: 1.1,
+    textShadow: "0px 0px 8px rgb(255,255,255)",
+    boxShadow: "0px 0px 8px rgb(255,255,255)",
+    transition: {
+      duration: 0.3,
+      yoyo: 5,
+    },
+  },
+};
+
 const Home = () => {
   const container = useRef(null);
 
@@ -51,9 +63,16 @@ const Home = () => {
           organization to the society and legitimizes it's activity according to
           the federal tvet program
         </motion.h1>
-        <Button className="w-32 mt-5" ghost>
+        {/* <Button className="w-32 mt-5" ghost>
           Get Started
-        </Button>
+        </Button> */}
+        <motion.button
+          className="w-36 mt-5 border-green-300 border-2 rounded-lg text-white"
+          variants={buttonVariants}
+          whileHover="hover"
+        >
+          Get Started
+        </motion.button>
       </div>
       <motion.div
         initial={{ opacity: 0, x: 100 }}

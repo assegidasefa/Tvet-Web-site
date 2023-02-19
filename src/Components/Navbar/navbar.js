@@ -7,7 +7,7 @@ const navbar = () => {
     <div className="w-full   h-full flex justify-between py-3 overflow-x-clip">
       <div className=" w-1/6 md:1/5 pl-5 mt-[-10px]">
         <img
-          className="rounded-full h-12 "
+          className="rounded-full h-10 md:h-12 "
           src={Logo}
           alt="Logo Image"
           style={{ width: "50px" }}
