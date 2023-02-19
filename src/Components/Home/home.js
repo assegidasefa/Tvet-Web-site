@@ -17,8 +17,8 @@ const Home = () => {
     return () => Lottie.destroy();
   }, []);
   return (
-    <div name="home" className=" h-100vh w-full flex">
-      <div className=" w-1/2 p-4">
+    <div name="home" className=" h-100vh w-full flex flex-col md:flex-row">
+      <div className=" w-[100%] md:w-1/2 p-4">
         <motion.h1
           initial={{ opacity: 0, y: -100 }}
           whileInView={{
@@ -28,7 +28,7 @@ const Home = () => {
           transition={{ delay: 1, duration: 2 }}
           className="text-2xl text-white uppercase font-mono font-bold pt-10"
         >
-          Hula Construction And Industrial College{" "}
+          HULA TVET COLLEGE{" "}
         </motion.h1>
         <motion.h1
           initial={{ opacity: 0, x: -100 }}
@@ -37,17 +37,19 @@ const Home = () => {
             x: 0,
           }}
           transition={{ delay: 1, duration: 2 }}
-          className="text-gray-300 font-mono text-sm pt-10 text-left"
+          className="text-gray-300 font-mono text-md pt-10 text-left lowercase "
         >
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          <span className="text-green-300 uppercase">HULA TVET COLLEGE </span>{" "}
+          was ESTaBLIShED AT HULA OR HAGERSLAM IN 2012 G.C. HULA TVET COLEEGE
+          HAD BEEN ESTaBLIsHED WITH FOUR DEPARTMENT NAMELY ICT DEPArTMENT ,
+          CONSTrCTON DEPRTMENT , metal fabrificaTIoN and BABOO and furniture
+          departments IN{" "}
+          <span className="text-green-300 ">
+            SOUTHERN ETHIOpIA now sidama region{" "}
+          </span>{" "}
+          . HUla tvet college are it's mission and purpose that needs to link
+          organization to the society and legitimizes it's activity according to
+          the federal tvet program
         </motion.h1>
         <Button className="w-32 mt-5" ghost>
           Get Started
@@ -60,7 +62,7 @@ const Home = () => {
           x: 0,
         }}
         transition={{ delay: 1, duration: 2 }}
-        className="w-1/2 h-96"
+        className=" h-96 w-[100%] bg-green-300 md:bg-red-400 md:w-1/2 "
         ref={container}
       ></motion.div>
     </div>

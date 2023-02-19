@@ -20,7 +20,7 @@ const contact = () => {
       name="contact"
       className="w-full h-100vh p-5 flex flex-col items-center"
     >
-      <div className="flex justify-between w-1/2 gap-2 mb-[-20px] z-10">
+      <div className="flex md:flex-row md:justify-between flex-col items-center w-full md:w-1/2 gap-2 mb-5 md:mb-[-20px] z-10">
         <div className="flex flex-col bg-white items-center rounded-md p-4 w-48 gap-2">
           <GoLocation size={28} className="text-blue-400" />
           <h1 className="font-bold text-md font-mono">Location</h1>
@@ -45,7 +45,7 @@ const contact = () => {
           <h1 className="text-gray-500 text-sm">xyz@gmial.com</h1>
         </div>
       </div>
-      <div className="bg-gray-200 w-1/3 pr-16 pt-10 flex justify-start items-start rounded-xl">
+      <div className="bg-gray-200 w-full md:w-1/3  md:pr-16 px-4 md:pt-10 flex flex-col md:flex-row md:justify-start md:items-start rounded-xl">
         <Form
           className="w-full"
           name="basic"

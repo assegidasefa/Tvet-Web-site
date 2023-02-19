@@ -14,10 +14,10 @@ const navbar = () => {
         ></img>
       </div>
 
-      <ul className="w-1/2 flex justify-around">
+      <ul className=" w-4/5 text-sm bg-yellow-300 sm:w-1/2 md:text-md lg:text-lg sm:bg-red-500 flex justify-around ">
         <li>
           <Link
-            className="text-white font-mono"
+            className="text-white font-mono hover:text-green-300 hover:cursor-pointer"
             activeClass="active"
             to="home"
             smooth={true}
@@ -28,7 +28,7 @@ const navbar = () => {
         </li>
         <li>
           <Link
-            className="text-white font-mono"
+            className="text-white font-mono hover:text-green-300 hover:cursor-pointer"
             activeClass="active"
             to="about"
             smooth={true}
@@ -39,7 +39,7 @@ const navbar = () => {
         </li>
         <li>
           <Link
-            className="text-white font-mono"
+            className="text-white font-mono hover:text-green-300 hover:cursor-pointer"
             activeClass="active"
             to="service"
             smooth={true}
@@ -50,13 +50,13 @@ const navbar = () => {
         </li>
         <li>
           <Link
-            className="text-white font-mono"
+            className="text-white font-mono hover:text-green-300 hover:cursor-pointer"
             activeClass="active"
             to="contact"
             smooth={true}
             duration={500}
           >
-            Contact us
+            Contact
           </Link>
         </li>
       </ul>

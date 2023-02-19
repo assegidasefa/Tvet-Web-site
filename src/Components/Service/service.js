@@ -3,33 +3,42 @@ import Lottie from "lottie-web";
 import { motion } from "framer-motion";
 
 const Service = () => {
-  const theory = useRef(null);
-  const practice = useRef(null);
-  const lifeSkill = useRef(null);
+  const fabric = useRef(null);
+  const construction = useRef(null);
+  const furniture = useRef(null);
+  const network = useRef(null);
 
   useEffect(() => {
     Lottie.loadAnimation({
-      container: theory.current,
+      container: network.current,
       renderer: "svg",
       loop: true,
       autoplay: true,
-      animationData: require("../../assets/Theory.json"),
+      animationData: require("../../assets/network.json"),
     });
 
     Lottie.loadAnimation({
-      container: practice.current,
+      container: furniture.current,
       renderer: "svg",
       loop: true,
       autoplay: true,
-      animationData: require("../../assets/practice.json"),
+      animationData: require("../../assets/furniture.json"),
     });
 
     Lottie.loadAnimation({
-      container: lifeSkill.current,
+      container: construction.current,
       renderer: "svg",
       loop: true,
       autoplay: true,
-      animationData: require("../../assets/lifeSkill.json"),
+      animationData: require("../../assets/construction.json"),
+    });
+
+    Lottie.loadAnimation({
+      container: fabric.current,
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      animationData: require("../../assets/fabric.json"),
     });
     return () => Lottie.destroy();
   }, []);
@@ -39,7 +48,10 @@ const Service = () => {
         <h1 className="text-white pb-10 uppercase text-3xl">Our Service</h1>
       </div>
 
-      <div name="service" className="w-[70%] h-100vh flex justify-around mb-5">
+      <div
+        name="service"
+        className="w-[70%] h-100vh flex flex-col gap-2 md:flex-row justify-around mb-5"
+      >
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           whileInView={{
@@ -49,16 +61,13 @@ const Service = () => {
           transition={{ delay: 1, duration: 2 }}
           className="w-64 p-2  flex flex-col items-center bg-gray-500 rounded-xl"
         >
-          <h1 className="text-2xl text-white pt-3">Theory</h1>
+          <h1 className="text-md text-white pt-3 mb-3">
+            ICT DEPARTMENT HAEDWARE AND NETWORKING DATA BASE ADMINISTRATION
+          </h1>
           <div
             className="w-32 flex justify-center items-center"
-            ref={theory}
+            ref={network}
           ></div>
-          <h1 className="text-white">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s,
-          </h1>
         </motion.div>
 
         <motion.div
@@ -69,16 +78,30 @@ const Service = () => {
           transition={{ delay: 1, duration: 2 }}
           className="w-64 p-2 flex flex-col items-center bg-gray-500 rounded-xl"
         >
-          <h1 className="text-2xl text-white pt-3">Practice</h1>
+          <h1 className="text-md text-white pt-3 mb-3">
+            BABOO AND FURNITURE WORK DEP'T
+          </h1>
+          <div
+            className="w-36 rounded-lg flex justify-center items-center py-5"
+            ref={furniture}
+          ></div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{
+            opacity: 1,
+          }}
+          transition={{ delay: 1, duration: 2 }}
+          className="w-64 p-2 flex flex-col items-center bg-gray-500 rounded-xl"
+        >
+          <h1 className="text-md text-white pt-3 mb-3">
+            CONSTRUCTION DEPARTMENT
+          </h1>
           <div
             className="w-32 flex justify-center items-center py-5"
-            ref={practice}
+            ref={construction}
           ></div>
-          <h1 className="text-white">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s,
-          </h1>
         </motion.div>
 
         <motion.div
@@ -90,16 +113,14 @@ const Service = () => {
           transition={{ delay: 1, duration: 2 }}
           className="w-64 p-2  flex flex-col items-center bg-gray-500 rounded-xl"
         >
-          <h1 className="text-2xl text-white pt-3">Life Skill</h1>
+          <h1 className="text-md text-white pt-3">
+            {" "}
+            METAL FABRICATION WORK DEPARTMENT
+          </h1>
           <div
             className="w-32 flex justify-center items-center py-5"
-            ref={lifeSkill}
+            ref={fabric}
           ></div>
-          <h1 className="text-white">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s,
-          </h1>
         </motion.div>
       </div>
     </div>
